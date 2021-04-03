@@ -370,6 +370,164 @@ footer .links ul a:hover {
   background: none;
 }
 
+.resume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.resume h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.resume .resume__main__info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #a3a3a3;
+}
+
+.resume .resume__main__info .resume__main__info__img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 180px;
+  height: 180px;
+  margin-right: 20px;
+}
+
+.resume .resume__main__info .resume__main__info__img img {
+  width: 100%;
+}
+
+.resume .resume__main__info .resume__main__person-info span {
+  display: block;
+  font-size: 14px;
+  margin: 5px 0 10px 0;
+}
+
+.resume .resume__main__info .resume__main__person-info p {
+  font-weight: 600;
+}
+
+.resume .resume__main__info .resume__main__person-info a {
+  display: block;
+  margin-top: 15px;
+}
+
+.resume .resume__main__info .resume__main__person-info a:hover {
+  text-decoration: underline;
+}
+
+.resume .resume__main__education {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.resume .resume__main__education h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.resume .resume__main__education h3 {
+  font-size: 18px;
+}
+
+.resume .resume__main__education span,
+.resume .resume__main__education h3 {
+  display: block;
+  margin-top: 10px;
+}
+
+.resume .resume__main__education span {
+  padding-left: 20px;
+}
+
+.resume .resume__main__about-me {
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 40px;
+  border-top: 1px solid #a3a3a3;
+  border-bottom: 1px solid #a3a3a3;
+}
+
+.resume .resume__main__about-me span {
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.resume .resume__main__about-me .resume__main__about-me__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.resume .resume__main__about-me .resume__main__about-me__text h3 {
+  font-size: 18px;
+  margin: 10px 0 15px 0;
+  text-decoration: underline;
+}
+
+.resume .resume__main__about-me .resume__main__about-me__text ul {
+  list-style: url("/img/check-mark.png") inside;
+}
+
+.resume .resume__main__about-me .resume__main__about-me__text ul li {
+  margin-bottom: 10px;
+}
+
+.resume .resume__main__work-experience {
+  padding: 40px 0 40px 0;
+}
+
+.resume .resume__main__work-experience h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.resume .resume__main__work-experience .date {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.resume .resume__main__work-experience span {
+  display: block;
+  margin: 10px 0 10px 0;
+}
+
+.resume .resume__main__work-experience p {
+  margin-bottom: 20px;
+}
+
+.resume .resume__main__work-experience ul li {
+  margin-top: 10px;
+}
+
+.resume .resume__main__work-experience ul p {
+  margin: 15px 0 10px 0;
+  font-style: italic;
+  border: none;
+}
+
 /************VARIABLES**********************/
 
 /**************STYLES*****************************/
@@ -393,6 +551,7 @@ body a,
 span,
 p,
 li,
+h1,
 h2,
 h3 {
   font-family: Tahoma, Geneva, sans-serif;
