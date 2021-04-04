@@ -228,7 +228,6 @@ header .header__list-block ul li:hover {
 .main-block .main-block__img {
   width: 450px;
   height: 450px;
-  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,6 +238,7 @@ header .header__list-block ul li:hover {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  border-radius: 50%;
 }
 
 .main-block .main-block__img picture {
@@ -267,7 +267,7 @@ header .header__list-block ul li:hover {
 }
 
 .main-block .main-block__info .main-block__info__title h2 {
-  margin: 15px 0 10px 0;
+  margin: 40px 0 10px 0;
   font-weight: 600;
 }
 
@@ -335,11 +335,11 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 183px;
+  min-height: 120px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-top: 1px solid #a3a3a3;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 footer .footer__section h2 {
@@ -362,8 +362,8 @@ footer .links ul {
 }
 
 footer .links ul a svg {
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
 }
 
 footer .links ul a:hover {
@@ -378,8 +378,9 @@ footer .links ul a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 60%;
-  margin: 0 auto;
+  padding-top: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .resume h1 {
@@ -387,16 +388,25 @@ footer .links ul a:hover {
   font-weight: 600;
 }
 
-.resume .resume__main__info {
+.resume .resume__main__info,
+.resume .resume__main__education,
+.resume .resume__main__about-me,
+.resume .resume__main__work-experience {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding-bottom: 40px;
+  padding-left: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.resume .resume__main__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-bottom: 1px solid #a3a3a3;
+  padding-bottom: 40px;
 }
 
 .resume .resume__main__info .resume__main__info__img {
@@ -409,6 +419,7 @@ footer .links ul a:hover {
 
 .resume .resume__main__info .resume__main__info__img img {
   width: 100%;
+  min-width: 180px;
 }
 
 .resume .resume__main__info .resume__main__person-info span {
@@ -431,9 +442,8 @@ footer .links ul a:hover {
 }
 
 .resume .resume__main__education {
-  width: 100%;
-  margin: 0 auto;
   padding-top: 20px;
+  padding-left: 100px;
 }
 
 .resume .resume__main__education h2 {
@@ -459,13 +469,13 @@ footer .links ul a:hover {
   width: 100%;
   margin-top: 20px;
   padding-top: 40px;
+  padding-left: 100px;
   border-top: 1px solid #a3a3a3;
   border-bottom: 1px solid #a3a3a3;
 }
 
 .resume .resume__main__about-me span {
   display: block;
-  text-align: center;
   padding-bottom: 20px;
 }
 
@@ -473,10 +483,14 @@ footer .links ul a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding-bottom: 20px;
+}
+
+.resume .resume__main__about-me .resume__main__about-me__text .resume__main__about-me__text__hardskils {
+  margin-right: 50px;
 }
 
 .resume .resume__main__about-me .resume__main__about-me__text h3 {
@@ -494,7 +508,8 @@ footer .links ul a:hover {
 }
 
 .resume .resume__main__work-experience {
-  padding: 40px 0 40px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .resume .resume__main__work-experience h2 {
@@ -526,11 +541,6 @@ footer .links ul a:hover {
   margin: 15px 0 10px 0;
   font-style: italic;
   border: none;
-}
-
-.projects {
-  width: 70%;
-  margin: 0 auto;
 }
 
 .projects h1 {
@@ -692,6 +702,7 @@ h3 {
 ._container {
   width: calc(100% - 80px);
   margin: 0 auto;
+  min-width: 310px;
 }
 
 @media (max-width: 1120px) {
@@ -723,6 +734,43 @@ h3 {
   .main-block .main-block__info .main-block__info__links nav a {
     width: 94px;
     height: 94px;
+  }
+
+  .resume .resume__main__info,
+  .resume .resume__main__education,
+  .resume .resume__main__about-me,
+  .resume .resume__main__work-experience {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 919px) {
+  .resume .resume__main__info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .resume .resume__main__about-me h1 {
+    text-align: center;
+  }
+
+  .resume .resume__main__about-me span {
+    text-align: center;
+  }
+
+  .resume .resume__main__about-me .resume__main__about-me__text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .resume .resume__main__work-experience h1 {
+    text-align: center;
   }
 }
 
@@ -802,6 +850,65 @@ h3 {
     text-align: center;
     margin-bottom: 20px;
   }
+
+  .resume .resume__main__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+
+  .resume .resume__main__info .resume__main__info__img {
+    margin-right: 0;
+  }
+
+  .resume .resume__main__info .resume__main__person-info {
+    padding-top: 20px;
+  }
+
+  .resume .resume__main__info .resume__main__person-info h1 {
+    font-size: 24px;
+  }
+
+  .resume .resume__main__education h1,
+  .resume .resume__main__about-me h1,
+  .resume .resume__main__about-me .resume__main__about-me__text h1,
+  .resume .resume__main__work-experience h1 {
+    font-size: 24px;
+  }
+
+  .resume .resume__main__education h2,
+  .resume .resume__main__about-me h2,
+  .resume .resume__main__about-me .resume__main__about-me__text h2,
+  .resume .resume__main__work-experience h2 {
+    font-size: 16px;
+  }
+
+  .resume .resume__main__education h3,
+  .resume .resume__main__about-me h3,
+  .resume .resume__main__about-me .resume__main__about-me__text h3,
+  .resume .resume__main__work-experience h3 {
+    font-size: 16px;
+  }
+
+  .resume .resume__main__education span,
+  .resume .resume__main__education li,
+  .resume .resume__main__education p,
+  .resume .resume__main__about-me span,
+  .resume .resume__main__about-me li,
+  .resume .resume__main__about-me p,
+  .resume .resume__main__about-me .resume__main__about-me__text span,
+  .resume .resume__main__about-me .resume__main__about-me__text li,
+  .resume .resume__main__about-me .resume__main__about-me__text p,
+  .resume .resume__main__work-experience span,
+  .resume .resume__main__work-experience li,
+  .resume .resume__main__work-experience p {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -837,6 +944,15 @@ h3 {
   .main-block .main-block__info .main-block__info__links nav a {
     width: 80px;
     height: 80px;
+  }
+
+  .resume {
+    padding-top: 10px;
+    padding: 30px 10px 0 10px;
+  }
+
+  .resume .resume__main__education h2 {
+    font-size: 14px;
   }
 
   footer {
