@@ -851,6 +851,7 @@ h3 {
 
   .main-block .main-block__img {
     margin: 0;
+    min-width: 220px;
   }
 
   .main-block .main-block__info {
