@@ -274,6 +274,10 @@ header .header__list-block ul li:hover a {
   max-width: 331px;
 }
 
+.main-block .main-block__info .main-block__info__title p::first-letter {
+  padding-left: 20px;
+}
+
 .main-block .main-block__info .main-block__info__links {
   padding-top: 20px;
 }
@@ -621,6 +625,10 @@ footer .links ul a:hover {
   width: 80%;
   min-width: 465px;
   color: #202020;
+}
+
+.projects .projects__section .projects__section__info p::first-letter {
+  padding-left: 20px;
 }
 
 .projects .projects__section .projects__section__info .projects__section__info__links {
